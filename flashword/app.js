@@ -13,6 +13,7 @@ const FlashWord = {
             answer: '',
             //correct will be a boolean
             correct: null,
+            showFeedback: false,
         }
     }
 }
