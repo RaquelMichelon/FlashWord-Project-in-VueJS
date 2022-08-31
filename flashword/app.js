@@ -10,7 +10,9 @@ const FlashWord = {
             wordA: 'olá / oi',
             wordB: 'hello',
             //this will be filled by the user
-            answer: ''
+            answer: '',
+            //correct will be a boolean
+            correct: null,
         }
     }
 }
