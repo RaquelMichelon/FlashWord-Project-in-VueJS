@@ -3,7 +3,7 @@ FlashWord-Project-in-VueJS is a project to continue learning the VueJS bases.
 
 Source tutorial: https://www.youtube.com/playlist?list=PLKPbe83DUccF3aCuuE0QJjemYMzTZ6l5n
 
-# How the project look like [work in progress]
+# How the project looks like [work in progress]
 
 ![](screen.png)
 
