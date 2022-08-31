@@ -15,6 +15,13 @@ const FlashWord = {
             correct: null,
             showFeedback: false,
         }
+    },
+    //we can also have the methods option
+    methods: {
+        checkAnswer() {
+            this.correct = this.wordB == this.answer; 
+            this.showFeedback = true
+        }
     }
 }
 

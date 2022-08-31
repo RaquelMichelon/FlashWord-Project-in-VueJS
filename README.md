@@ -3,15 +3,15 @@ FlashWord-Project-in-VueJS is a project to continue learning the VueJS bases.
 
 Source tutorial: https://www.youtube.com/playlist?list=PLKPbe83DUccF3aCuuE0QJjemYMzTZ6l5n
 
-# How the project look like
+# How the project look like [work in progress]
 
 ![](screen.png)
 
-# Concepts learned by doing it:
+# Concepts learned
 
 - Using Vue with its CDN (Content Delivery Network)
 
-- How to create a vue app `createApp()` and 'plugging' it into an HTML element `mount()`
+- How to create a vue app: `createApp()`; and 'plugging' it into an HTML element: `mount()`
 
 - Text interpolation using double curly braquets `{{}}`
 
@@ -19,3 +19,5 @@ Source tutorial: https://www.youtube.com/playlist?list=PLKPbe83DUccF3aCuuE0QJjem
     - v-model
     - v-if / v-else-if / v-else
     - v-on
+
+- Options Objects containing data, methods, 
