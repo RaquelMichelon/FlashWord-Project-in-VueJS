@@ -39,7 +39,7 @@
         <!-- 1st vue directive = v-model that bind to the input-->
         <input type="text" v-model="answer">
         <!-- 2nd in a text interpolation to the page output -->
-        <p>You answered the word: {{ answer }}</p>
+        <p v-if="answer != ''">You answered the word: {{ answer }}</p>
     </div>
     
 </body>
