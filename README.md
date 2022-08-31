@@ -19,5 +19,6 @@ Source tutorial: https://www.youtube.com/playlist?list=PLKPbe83DUccF3aCuuE0QJjem
     - v-model
     - v-if / v-else-if / v-else
     - v-on
+    - v-cloak
 
 - Options Objects containing data, methods, 
