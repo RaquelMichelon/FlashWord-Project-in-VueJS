@@ -31,8 +31,15 @@
 <body>
 
     <h1>FlashWord</h1>
+    <!-- {{}} this sintax is called a text interpolation -->
     <div id="app">
         What's the English translation for the word <strong>{{ wordA }}</strong>?
+        
+        <!-- one data property used in two places: -->
+        <!-- 1st vue directive = v-model that bind to the input-->
+        <input type="text" v-model="answer">
+        <!-- 2nd in a text interpolation to the page output -->
+        <p>You answered the word: {{ answer }}</p>
     </div>
     
 </body>
