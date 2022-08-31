@@ -21,7 +21,14 @@ const FlashWord = {
         checkAnswer() {
             this.correct = this.wordB == this.answer; 
             this.showFeedback = true
+        },
+        //solution challenge #1 
+        resetAnswer() {
+            this.correct = null,
+            this.showFeedback = false,
+            this.answer = ''
         }
+        //solution challenge #1
     }
 }
 

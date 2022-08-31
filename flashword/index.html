@@ -48,6 +48,10 @@
         <!-- v-on directive receive an directive argument, in this case is click -->
         <button v-on:click="checkAnswer()">Check Answer</button>
 
+        <!-- solution challenge #1 -->
+        <button v-on:click="resetAnswer()">Reset Answer</button>
+        <!-- solution challenge #1 -->
+        
         <div v-if="showFeedback">
             <p v-if="correct" class="correct">You Got it!</p>
             <p v-else class="incorrect">Sorry, please try again!</p>
