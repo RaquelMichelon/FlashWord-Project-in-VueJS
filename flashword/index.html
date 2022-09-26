@@ -48,14 +48,61 @@
         <!-- v-on directive receive an directive argument, in this case is click -->
         <button v-on:click="checkAnswer()">Check Answer</button>
 
-        <!-- solution challenge #1 -->
-        <button v-on:click="resetAnswer()">Reset Answer</button>
-        <!-- solution challenge #1 -->
         
-        <div v-if="showFeedback">
+        <!-- 'template' tag was designed for js loaded content -->
+        <template v-if="showFeedback">
             <p v-if="correct" class="correct">You Got it!</p>
             <p v-else class="incorrect">Sorry, please try again!</p>
-        </div>
+
+            <!-- solution challenge #1 -->
+        <button v-on:click="resetAnswer()">Reset Answer</button>
+        <!-- solution challenge #1 -->
+        </template>
+
+        <h2>List rendering: Array example</h2>  
+
+        <ul>
+            <!-- v-for directive using an alias to represent each element on the list -->
+            <li v-for="ptWord, index in portugueseWords">{{ index }}: {{ ptWord }}</li>
+        </ul>
+
+        <h2>Combining v-if and v-for</h2>  
+        <!-- in this case the v-if directive will always take precedence, and just then v-for will be executed,
+        instead of combine those two directives on the same element, it is necessary to cut them into different elements: -->
+
+        <ul>
+            <li v-for="ptWord, index in portugueseWords">
+                <template v-if="ptWord.length > 3">
+
+                    {{ index }}: {{ ptWord }}</li>
+                </template>
+        </ul>
+
+
+
+        <h2>List rendering: object example</h2>  
+
+        <ul>
+            <li v-for="thisWord, key, index in word">{{index}} - {{key}}: {{ thisWord }}</li>
+        </ul>
+
+        <h2>List rendering: Array of objects example</h2>  
+        <ul>
+            <li v-for="word, index in words">{{index}}: The translation of {{word.wordA}} is {{word.wordB}}</li>
+        </ul>
+
+        <h2>Numerical Iteration</h2>  
+        <ul>
+            <li v-for="number in 10">{{ number }}</li>
+        </ul>
+
+        <h2>String Iteration</h2>  
+        <ul>
+            <li v-for="char in 'Raquel'">{{ char }}</li>
+        </ul>
+
+
+
     </div>
     
 </body>

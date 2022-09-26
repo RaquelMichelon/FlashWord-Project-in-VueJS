@@ -14,6 +14,21 @@ const FlashWord = {
             //correct will be a boolean
             correct: null,
             showFeedback: false,
+
+            //to learn list rendering
+            //array example
+            portugueseWords: ['oi', 'tchau', 'um', 'dois',],
+
+            //object example
+            word: {a: 'oi', b: 'hello'},
+
+            //array of objects examples
+            words: [
+                {wordA: 'oi', wordB: 'hello'}, 
+                {wordA: 'tchau', wordB: 'goodbye'}, 
+                {wordA: 'um', wordB: 'one'}, 
+                {wordA: 'dois', wordB: 'two'},
+            ],
         }
     },
     //we can also have the methods option
@@ -22,13 +37,10 @@ const FlashWord = {
             this.correct = this.wordB == this.answer; 
             this.showFeedback = true
         },
-        //solution challenge #1 
         resetAnswer() {
-            this.correct = null,
             this.showFeedback = false,
             this.answer = ''
         }
-        //solution challenge #1
     }
 }
 

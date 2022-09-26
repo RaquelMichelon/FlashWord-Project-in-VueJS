@@ -13,13 +13,15 @@ Source tutorial: https://www.youtube.com/playlist?list=PLKPbe83DUccF3aCuuE0QJjem
 
 - How to create a vue app: `createApp()`; and 'plugging' it into an HTML element: `mount()`
 
-- Text interpolation using double curly braquets `{{}}` to the data be bound to the page
+- Text interpolation using double curly braquets `{{}}` to the data be bounded to the page
 
 - Vue Directives such as
     - v-model
     - v-if / v-else-if / v-else
     - v-on (this directive accept argument: `v-on:click`)
     - v-cloak (to hide unrendered vue content)
+    - v-for (to list rendering)
+    - how to combine v-for and v-if
 
 - Working with the Options API style: Options Objects containing data, methods, 
 
